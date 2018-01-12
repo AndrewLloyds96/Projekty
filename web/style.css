@@ -1,0 +1,53 @@
+html{
+    background: url(https://www.rosannadavisonnutrition.com/wp-content/uploads/2015/02/1684227.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    margin:0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#board{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 10em;
+    width: 20%;
+    height: 6.5em;
+    -webkit-box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 11px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 11px 0px rgba(50, 50, 50, 0.75);
+    font-size: 23px;
+    border-radius: 20px;
+    transition: 500ms;
+    color: black;
+    font-size: 30px;
+background: whitesmoke;
+}
+#board a:first-child{
+    margin-top: 25px;
+}
+#board a{
+    opacity: 0.8;
+    transition: 500ms;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+#board a:hover{
+    transition: 500ms;
+    color: rgba(255,79,0,0.93);
+    cursor: pointer;
+    font-size: 25px;
+    opacity: 1;
+}
+#board:hover{
+    transition: 500ms;
+    width: 22%;
+    height: 6.7em;
+}
+#next{
+ font-size: 20px;   
+}
