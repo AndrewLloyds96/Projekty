@@ -101,4 +101,20 @@ public class FlightsRepo
 
             }
         }
+
+    public void delete(int id) {
+        String que = "delete from flights where FlightNumber=?";
+        try
+        {
+            PreparedStatement st = conn.prepareStatement(que);
+            st.setInt(1,id);
+            st.executeUpdate();
+        }
+        catch (Exception e)
+        {
+
+            System.out.println(e);
+        }
+
+    }
 }

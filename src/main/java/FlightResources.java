@@ -36,9 +36,13 @@ public class FlightResources {
     @Produces(MediaType.APPLICATION_XML)
     public main.java.Flight deleteFlight(@PathParam("id") int id)
     {
-
-        main.java.Flight delf = repo.getFlights(id);
-
+        main.java.Flight delF = repo.checkFlight(id);
+        if(delF.getFlightNumber()!=0)
+        {
+         repo.delete(id);
+        }
+        return delF;
     }
+
 
 }
